@@ -1,0 +1,2 @@
+"""Highlight recognition evaluation domain."""
+

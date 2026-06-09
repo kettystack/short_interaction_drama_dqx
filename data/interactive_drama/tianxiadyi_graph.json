@@ -1,0 +1,1028 @@
+{
+  "drama_id": "tianxiadyi",
+  "title": "天下第一纨绔：藏锋互动版",
+  "version": "interactive-v2-longform",
+  "initial_node_id": "intro_mask",
+  "nodes": [
+    {
+      "node_id": "intro_mask",
+      "episode_id": "txy_001",
+      "ts_in_video": 45.0,
+      "resume_at": 57.0,
+      "question": "众人把他当成没用纨绔，他该怎么破局？",
+      "context": "第一幕：羞辱局。主角第一次被推到众人面前，所有人都等着看他出丑。真正的危机不是羞辱，而是谁在借这场局试探他的底牌。",
+      "options": [
+        {
+          "option_id": "keep_mask",
+          "label": "继续装纨绔",
+          "description": "把荒唐演到底，先让对手放松警惕。",
+          "state_delta": {
+            "disguise": 18,
+            "suspicion": -8
+          },
+          "route_tags": [
+            "藏锋线",
+            "装纨绔暗线"
+          ],
+          "branch_video_url": "/videos/tianxiadyi/branches/txy_001_b3.mp4",
+          "branch_duration": 70.0,
+          "next_node_id": "banquet_hidden",
+          "branch_start_at": 0.0,
+          "branch_video_session_hint": "真实分支视频"
+        },
+        {
+          "option_id": "show_skill",
+          "label": "当场露一手",
+          "description": "用一次漂亮反击直接压住全场。",
+          "state_delta": {
+            "reputation": 18,
+            "suspicion": 14,
+            "justice": 5
+          },
+          "route_tags": [
+            "锋芒线",
+            "正面硬刚线"
+          ],
+          "branch_video_url": "/videos/tianxiadyi/branches/txy_001_b1.mp4",
+          "branch_duration": 52.0,
+          "next_node_id": "banquet_hard",
+          "branch_start_at": 0.0,
+          "branch_video_session_hint": "真实分支视频"
+        },
+        {
+          "option_id": "wine_trap",
+          "label": "借酒反设局",
+          "description": "表面胡闹，实际诱导对手说漏嘴。",
+          "state_delta": {
+            "power": 10,
+            "disguise": 8,
+            "suspicion": -4
+          },
+          "route_tags": [
+            "权谋线",
+            "权谋设局线"
+          ],
+          "branch_video_url": "/videos/tianxiadyi/branches/txy_001_b2.mp4",
+          "branch_duration": 70.0,
+          "next_node_id": "banquet_scheme",
+          "branch_start_at": 0.0,
+          "branch_video_session_hint": "真实分支视频"
+        }
+      ]
+    },
+    {
+      "node_id": "banquet_hidden",
+      "episode_id": "txy_001",
+      "ts_in_video": 96.0,
+      "resume_at": 108.0,
+      "question": "他装疯卖傻换来偷听机会，下一步怎么用这条线索？",
+      "context": "第二幕：暗线追查。敌人以为主角只是荒唐纨绔，当众说漏了半句账本去向。主角已经听见，却还不能暴露自己。",
+      "options": [
+        {
+          "option_id": "follow_servant",
+          "label": "尾随小厮",
+          "description": "顺着送信小厮追到账本下落。",
+          "state_delta": {
+            "power": 12,
+            "disguise": 8
+          },
+          "route_tags": [
+            "暗线追查"
+          ],
+          "next_node_id": "ally_choice",
+          "branch_start_at": 94.0,
+          "branch_video_url": "/videos/tianxiadyi/第1集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "protect_girl",
+          "label": "先替她解围",
+          "description": "放弃即时追踪，先护住被牵连的人。",
+          "state_delta": {
+            "romance": 18,
+            "justice": 12,
+            "reputation": 6,
+            "heroine": 16
+          },
+          "route_tags": [
+            "情感守护线"
+          ],
+          "next_node_id": "ally_choice",
+          "branch_start_at": 97.5,
+          "branch_video_url": "/videos/tianxiadyi/第1集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "fake_drunk",
+          "label": "装醉套真话",
+          "description": "继续装醉，让对手自己补完线索。",
+          "state_delta": {
+            "disguise": 14,
+            "power": 8,
+            "suspicion": -6
+          },
+          "route_tags": [
+            "藏锋线"
+          ],
+          "next_node_id": "ally_choice",
+          "branch_start_at": 101.0,
+          "branch_video_url": "/videos/tianxiadyi/第1集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "grab_account_book",
+          "label": "强抢账本",
+          "description": "不再隐藏，直接抢走账本。",
+          "state_delta": {
+            "reputation": 10,
+            "suspicion": 28
+          },
+          "route_tags": [
+            "当场暴露结局"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 104.5,
+          "branch_video_url": "/videos/tianxiadyi/第1集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        }
+      ]
+    },
+    {
+      "node_id": "banquet_hard",
+      "episode_id": "txy_001",
+      "ts_in_video": 96.0,
+      "resume_at": 108.0,
+      "question": "他一招压住全场，敌人已经警觉，还要继续硬刚吗？",
+      "context": "第二幕：锋芒过早。主角公开反击之后，场面暂时倒向他，但暗处的人已经确认他不是普通纨绔。",
+      "options": [
+        {
+          "option_id": "force_apology",
+          "label": "逼当众道歉",
+          "description": "趁势让羞辱他的人低头。",
+          "state_delta": {
+            "reputation": 16,
+            "justice": 10,
+            "suspicion": 10
+          },
+          "route_tags": [
+            "锋芒线"
+          ],
+          "next_node_id": "ally_choice",
+          "branch_start_at": 94.0,
+          "branch_video_url": "/videos/tianxiadyi/第1集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "stop_before_expose",
+          "label": "点到即止",
+          "description": "赢下这一局，但不继续暴露底牌。",
+          "state_delta": {
+            "reputation": 8,
+            "disguise": 8,
+            "suspicion": -4
+          },
+          "route_tags": [
+            "克制反击"
+          ],
+          "next_node_id": "ally_choice",
+          "branch_start_at": 97.5,
+          "branch_video_url": "/videos/tianxiadyi/第1集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "save_commoner",
+          "label": "先救无辜人",
+          "description": "把锋芒转向救人，赢得民心。",
+          "state_delta": {
+            "justice": 40,
+            "romance": 8,
+            "reputation": 8,
+            "heroine": 8
+          },
+          "route_tags": [
+            "情感守护线"
+          ],
+          "next_node_id": "ally_choice",
+          "branch_start_at": 101.0,
+          "branch_video_url": "/videos/tianxiadyi/第1集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "name_mastermind",
+          "label": "直接点出幕后人",
+          "description": "当众说破幕后黑手的名字。",
+          "state_delta": {
+            "reputation": 12,
+            "suspicion": 34
+          },
+          "route_tags": [
+            "当场暴露结局"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 104.5,
+          "branch_video_url": "/videos/tianxiadyi/第1集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        }
+      ]
+    },
+    {
+      "node_id": "banquet_scheme",
+      "episode_id": "txy_001",
+      "ts_in_video": 96.0,
+      "resume_at": 108.0,
+      "question": "酒局反套成功，对手露出破绽，他该先动哪枚棋？",
+      "context": "第二幕：酒局设棋。主角借酒局让对手误判形势，拿到一条关于账本和幕后人的线索。",
+      "options": [
+        {
+          "option_id": "trade_secret",
+          "label": "用线索交易",
+          "description": "拿半条线索换一个盟友。",
+          "state_delta": {
+            "power": 20,
+            "suspicion": 4
+          },
+          "route_tags": [
+            "权谋线"
+          ],
+          "next_node_id": "ally_choice",
+          "branch_start_at": 94.0,
+          "branch_video_url": "/videos/tianxiadyi/第1集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "plant_false_clue",
+          "label": "反放假线索",
+          "description": "放出假消息，钓幕后人现身。",
+          "state_delta": {
+            "power": 12,
+            "disguise": 10,
+            "suspicion": -4
+          },
+          "route_tags": [
+            "权谋线"
+          ],
+          "next_node_id": "ally_choice",
+          "branch_start_at": 97.5,
+          "branch_video_url": "/videos/tianxiadyi/第1集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "tell_heroine",
+          "label": "告知女主",
+          "description": "把危险告诉她，换来第一次真正信任。",
+          "state_delta": {
+            "romance": 18,
+            "justice": 8,
+            "heroine": 22
+          },
+          "route_tags": [
+            "情感守护线"
+          ],
+          "next_node_id": "ally_choice",
+          "branch_start_at": 101.0,
+          "branch_video_url": "/videos/tianxiadyi/第1集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "sell_all_secret",
+          "label": "把线索卖给外敌",
+          "description": "换来最快的利益，但会彻底失去立场。",
+          "state_delta": {
+            "power": 18,
+            "justice": -28,
+            "suspicion": 20
+          },
+          "route_tags": [
+            "失信败局"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 104.5,
+          "branch_video_url": "/videos/tianxiadyi/第1集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        }
+      ]
+    },
+    {
+      "node_id": "ally_choice",
+      "episode_id": "txy_002",
+      "ts_in_video": 38.0,
+      "resume_at": 50.0,
+      "question": "第一条关键线索已经到手，下一步先找谁？",
+      "context": "第三幕：盟友选择。主角知道单靠自己无法同时保住伪装、线索和身边人。现在他必须决定第一枚盟友棋。",
+      "options": [
+        {
+          "option_id": "old_friend",
+          "label": "找旧友借势",
+          "description": "用旧关系换资源，快速扩大势力。",
+          "state_delta": {
+            "power": 24,
+            "suspicion": 6,
+            "old_friend": 22
+          },
+          "route_tags": [
+            "盟友线"
+          ],
+          "next_node_id": "court_crossfire",
+          "branch_start_at": 36.0,
+          "branch_video_url": "/videos/tianxiadyi/第2集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "walk_alone",
+          "label": "独自追查",
+          "description": "不牵连别人，冒险拿隐藏情报。",
+          "state_delta": {
+            "disguise": 12,
+            "power": 8,
+            "suspicion": 8
+          },
+          "route_tags": [
+            "孤身暗查"
+          ],
+          "next_node_id": "shadow_tail",
+          "branch_start_at": 39.5,
+          "branch_video_url": "/videos/tianxiadyi/第2集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "protect_family",
+          "label": "先护家人",
+          "description": "放慢追查，先堵住敌人对家人的威胁。",
+          "state_delta": {
+            "justice": 18,
+            "romance": 8,
+            "reputation": 8,
+            "heroine": 8
+          },
+          "route_tags": [
+            "守护线"
+          ],
+          "next_node_id": "family_hostage",
+          "branch_start_at": 43.0,
+          "branch_video_url": "/videos/tianxiadyi/第2集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "trust_new_minister",
+          "label": "相信新来的清官",
+          "description": "把核心线索交给一个看似正直的新盟友。",
+          "state_delta": {
+            "reputation": 8,
+            "suspicion": -4
+          },
+          "route_tags": [
+            "错信盟友结局"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 46.5,
+          "branch_video_url": "/videos/tianxiadyi/第2集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        }
+      ]
+    },
+    {
+      "node_id": "court_crossfire",
+      "episode_id": "txy_003",
+      "ts_in_video": 68.0,
+      "resume_at": 82.0,
+      "question": "朝堂开始围猎，他要先保人，还是先保证据？",
+      "context": "第四幕：朝堂交锋。旧友带来入局机会，也带来新的风险。证人、账本、家人只能先救一个。",
+      "options": [
+        {
+          "option_id": "public_impeach",
+          "label": "当朝弹劾",
+          "description": "用名声逼对手交出破绽。",
+          "state_delta": {
+            "reputation": 18,
+            "suspicion": 12
+          },
+          "route_tags": [
+            "锋芒线",
+            "朝堂线"
+          ],
+          "next_node_id": "prison_trial",
+          "branch_start_at": 66.0,
+          "branch_video_url": "/videos/tianxiadyi/第3集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "secret_account",
+          "label": "暗取账本",
+          "description": "避开正面冲突，先拿铁证。",
+          "state_delta": {
+            "power": 14,
+            "disguise": 10
+          },
+          "route_tags": [
+            "权谋线",
+            "证据线"
+          ],
+          "next_node_id": "prison_trial",
+          "flags_delta": {
+            "account_book": true
+          },
+          "branch_start_at": 69.5,
+          "branch_video_url": "/videos/tianxiadyi/第3集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "save_witness",
+          "label": "先救证人",
+          "description": "证据可能丢，但活人能说出真相。",
+          "state_delta": {
+            "justice": 16,
+            "romance": 8,
+            "heroine": 8
+          },
+          "route_tags": [
+            "守护线"
+          ],
+          "next_node_id": "family_hostage",
+          "flags_delta": {
+            "witness": true
+          },
+          "branch_start_at": 73.0,
+          "branch_video_url": "/videos/tianxiadyi/第3集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "burn_letter",
+          "label": "烧掉半封密信",
+          "description": "为保自身安全毁掉关键证据。",
+          "state_delta": {
+            "disguise": 10,
+            "justice": -20
+          },
+          "route_tags": [
+            "证据断裂结局"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 76.5,
+          "branch_video_url": "/videos/tianxiadyi/第3集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        }
+      ]
+    },
+    {
+      "node_id": "shadow_tail",
+      "episode_id": "txy_003",
+      "ts_in_video": 72.0,
+      "resume_at": 86.0,
+      "question": "他独自追到暗巷，刺客就在眼前，要不要下死手？",
+      "context": "第四幕：暗巷追杀。独行让他看见真正幕后人的影子，也让他无人照应。",
+      "options": [
+        {
+          "option_id": "steal_token",
+          "label": "夺令牌不杀人",
+          "description": "拿走能证明身份的令牌，留下活口。",
+          "state_delta": {
+            "power": 10,
+            "disguise": 8,
+            "justice": 8
+          },
+          "route_tags": [
+            "暗线追查",
+            "留活口"
+          ],
+          "next_node_id": "prison_trial",
+          "flags_delta": {
+            "token": true
+          },
+          "branch_start_at": 70.0,
+          "branch_video_url": "/videos/tianxiadyi/第3集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "let_enemy_go",
+          "label": "故意放他回去",
+          "description": "让刺客带路，赌一条更深的暗线。",
+          "state_delta": {
+            "disguise": 14,
+            "power": 8,
+            "suspicion": -6,
+            "mastermind": 12
+          },
+          "route_tags": [
+            "藏锋线",
+            "隐藏真相线"
+          ],
+          "next_node_id": "prison_trial",
+          "flags_delta": {
+            "shadow_tail": true
+          },
+          "branch_start_at": 73.5,
+          "branch_video_url": "/videos/tianxiadyi/第3集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "kill_assassin",
+          "label": "灭口保密",
+          "description": "杀人灭口，线索也随之断掉。",
+          "state_delta": {
+            "power": 12,
+            "justice": -24,
+            "suspicion": 16
+          },
+          "route_tags": [
+            "血债结局"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 77.0,
+          "branch_video_url": "/videos/tianxiadyi/第3集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        }
+      ]
+    },
+    {
+      "node_id": "family_hostage",
+      "episode_id": "txy_004",
+      "ts_in_video": 55.0,
+      "resume_at": 70.0,
+      "question": "家人被扣为人质，他要正面救人还是继续追查？",
+      "context": "第五幕：人质局。敌人不再试探主角，而是直接拿他最在乎的人开刀。",
+      "options": [
+        {
+          "option_id": "swap_hostage",
+          "label": "以身换人质",
+          "description": "主角亲自入局，换家人暂时安全。",
+          "state_delta": {
+            "justice": 18,
+            "romance": 10,
+            "suspicion": 8,
+            "heroine": 10
+          },
+          "route_tags": [
+            "守护线"
+          ],
+          "next_node_id": "prison_trial",
+          "branch_start_at": 53.0,
+          "branch_video_url": "/videos/tianxiadyi/第4集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "call_old_friend",
+          "label": "借旧友兵力",
+          "description": "让盟友救人，自己继续追查。",
+          "state_delta": {
+            "power": 16,
+            "reputation": 6,
+            "old_friend": 18
+          },
+          "route_tags": [
+            "盟友线"
+          ],
+          "next_node_id": "palace_night",
+          "branch_start_at": 56.5,
+          "branch_video_url": "/videos/tianxiadyi/第4集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "abandon_chase",
+          "label": "放弃追查先保家",
+          "description": "暂时认输，换身边人活下来。",
+          "state_delta": {
+            "justice": 22,
+            "romance": 10,
+            "power": -8
+          },
+          "route_tags": [
+            "守护线",
+            "低调保全"
+          ],
+          "next_node_id": "palace_night",
+          "branch_start_at": 60.0,
+          "branch_video_url": "/videos/tianxiadyi/第4集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "force_rescue",
+          "label": "强攻救人",
+          "description": "不顾埋伏硬闯，可能救下一人，也可能失去更多。",
+          "state_delta": {
+            "reputation": 8,
+            "justice": -18,
+            "suspicion": 18
+          },
+          "route_tags": [
+            "血债结局"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 63.5,
+          "branch_video_url": "/videos/tianxiadyi/第4集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        }
+      ]
+    },
+    {
+      "node_id": "prison_trial",
+      "episode_id": "txy_004",
+      "ts_in_video": 96.0,
+      "resume_at": 110.0,
+      "question": "他被反咬入狱，审堂上只剩一次自救机会。",
+      "context": "第六幕：牢狱审判。敌人把前几幕的选择全部反过来利用。你之前积累的名声、伪装和证据会决定他能不能翻盘。",
+      "options": [
+        {
+          "option_id": "admit_mask",
+          "label": "承认一直在藏锋",
+          "description": "主动摘下面具，用名声反压审堂。",
+          "state_delta": {
+            "reputation": 18,
+            "suspicion": 10,
+            "emperor": 8
+          },
+          "route_tags": [
+            "身份揭晓"
+          ],
+          "next_node_id": "palace_night",
+          "branch_start_at": 94.0,
+          "branch_video_url": "/videos/tianxiadyi/第4集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "keep_mask_to_death",
+          "label": "死咬纨绔身份",
+          "description": "继续装到底，让敌人以为胜券在握。",
+          "state_delta": {
+            "disguise": 18,
+            "power": 8,
+            "suspicion": -8
+          },
+          "route_tags": [
+            "藏锋线"
+          ],
+          "next_node_id": "palace_night",
+          "branch_start_at": 97.5,
+          "branch_video_url": "/videos/tianxiadyi/第4集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "frame_mastermind",
+          "label": "反扣幕后人",
+          "description": "把半真半假的证据抛出去，逼幕后人现身，并夺下能证明其身份的令牌。",
+          "state_delta": {
+            "power": 22,
+            "suspicion": 6,
+            "mastermind": 18
+          },
+          "route_tags": [
+            "权谋线"
+          ],
+          "next_node_id": "palace_night",
+          "branch_start_at": 101.0,
+          "branch_video_url": "/videos/tianxiadyi/第4集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频",
+          "flags_delta": {
+            "token": true
+          }
+        },
+        {
+          "option_id": "silence_witness",
+          "label": "让证人闭嘴",
+          "description": "用最省事的方式堵住风险，也堵住了人心。",
+          "state_delta": {
+            "power": 14,
+            "justice": -30,
+            "romance": -10
+          },
+          "route_tags": [
+            "孤家寡人结局"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 104.5,
+          "branch_video_url": "/videos/tianxiadyi/第4集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        }
+      ]
+    },
+    {
+      "node_id": "palace_night",
+      "episode_id": "txy_005",
+      "ts_in_video": 48.0,
+      "resume_at": 60.0,
+      "question": "夜入宫门，他发现真正的局不在朝堂，而在皇帝身边。",
+      "context": "第七幕：宫门夜局。此前每一次选择都会改变谁愿意帮他，谁准备背刺他。",
+      "options": [
+        {
+          "option_id": "protect_emperor",
+          "label": "先护圣驾",
+          "description": "保住皇帝，换来公开翻案的机会。",
+          "state_delta": {
+            "justice": 18,
+            "reputation": 12,
+            "emperor": 24
+          },
+          "route_tags": [
+            "守护线"
+          ],
+          "next_node_id": "final_choice",
+          "branch_start_at": 46.0,
+          "branch_video_url": "/videos/tianxiadyi/第5集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "take_secret_edict",
+          "label": "先夺密诏",
+          "description": "拿到能翻局的密诏，但会引发更大怀疑。",
+          "state_delta": {
+            "power": 18,
+            "suspicion": 10
+          },
+          "route_tags": [
+            "权谋线"
+          ],
+          "next_node_id": "final_choice",
+          "flags_delta": {
+            "edict": true
+          },
+          "branch_start_at": 49.5,
+          "branch_video_url": "/videos/tianxiadyi/第5集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "confess_to_heroine",
+          "label": "向女主坦白",
+          "description": "把所有真相告诉她，换一次并肩。",
+          "state_delta": {
+            "romance": 22,
+            "justice": 8,
+            "heroine": 26
+          },
+          "route_tags": [
+            "情感守护线"
+          ],
+          "next_node_id": "final_choice",
+          "branch_start_at": 53.0,
+          "branch_video_url": "/videos/tianxiadyi/第5集.mp4",
+          "branch_duration": 12.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "trust_traitor",
+          "label": "听从内侍带路",
+          "description": "相信一个来得太巧的人。",
+          "state_delta": {
+            "suspicion": -8
+          },
+          "route_tags": [
+            "错信盟友结局"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 56.5,
+          "branch_video_url": "/videos/tianxiadyi/第5集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        }
+      ]
+    },
+    {
+      "node_id": "final_choice",
+      "episode_id": "txy_006",
+      "ts_in_video": 42.0,
+      "resume_at": 58.0,
+      "question": "最后一局，他要如何结束这场围猎？",
+      "context": "终幕：藏锋局。主角终于站到棋盘中央。你的路线会在这里收束成结局。",
+      "options": [
+        {
+          "option_id": "expose_all",
+          "label": "公开所有真相",
+          "description": "让真相大白于天下，用名声结束阴谋。",
+          "state_delta": {
+            "reputation": 22,
+            "justice": 12,
+            "emperor": 10
+          },
+          "route_tags": [
+            "结局：天下扬名"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 40.0,
+          "branch_video_url": "/videos/tianxiadyi/第6集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "rule_from_shadow",
+          "label": "继续藏在暗处",
+          "description": "不争虚名，只把敌人全部套进局里。",
+          "state_delta": {
+            "disguise": 20,
+            "power": 10
+          },
+          "route_tags": [
+            "结局：藏锋为王"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 43.5,
+          "branch_video_url": "/videos/tianxiadyi/第6集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "coup_chess",
+          "label": "借势清洗朝局",
+          "description": "用手里的棋子重排朝堂。",
+          "state_delta": {
+            "power": 24,
+            "suspicion": 6,
+            "old_friend": 8,
+            "mastermind": 10
+          },
+          "route_tags": [
+            "结局：权谋翻盘"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 47.0,
+          "branch_video_url": "/videos/tianxiadyi/第6集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "save_people_first",
+          "label": "先救所有被牵连的人",
+          "description": "放弃最漂亮的胜利，换更多人活下来。",
+          "state_delta": {
+            "justice": 24,
+            "romance": 8,
+            "heroine": 8,
+            "emperor": 6
+          },
+          "route_tags": [
+            "结局：守护羁绊"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 50.5,
+          "branch_video_url": "/videos/tianxiadyi/第6集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频"
+        },
+        {
+          "option_id": "spare_enemy",
+          "label": "放过最后的敌人",
+          "description": "集齐账本、令牌、密诏后，才知道放他一条生路意味着什么。",
+          "state_delta": {
+            "justice": 10,
+            "disguise": 8,
+            "mastermind": 20
+          },
+          "route_tags": [
+            "结局：隐藏真相"
+          ],
+          "next_node_id": null,
+          "branch_start_at": 54.0,
+          "branch_video_url": "/videos/tianxiadyi/第6集.mp4",
+          "branch_duration": 10.0,
+          "branch_video_session_hint": "素材 fallback：使用本集原片高能片段，后续可替换为真实分支视频",
+          "condition": {
+            "flags": [
+              "account_book",
+              "token",
+              "edict"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "endings": [
+    {
+      "ending_id": "exposed_early",
+      "title": "锋芒过早结局",
+      "condition": {
+        "route_tag": "当场暴露结局"
+      },
+      "summary": "你太早亮出底牌。敌人确认他并非纨绔后，立刻调转局势，主角还没拿到真正证据就被反扣入局。",
+      "category": "失败结局"
+    },
+    {
+      "ending_id": "betrayed_ally",
+      "title": "错信盟友结局",
+      "condition": {
+        "route_tag": "错信盟友结局"
+      },
+      "summary": "你把关键线索交给了最不该相信的人。等主角反应过来，证据已经变成指向自己的刀。",
+      "category": "失败结局"
+    },
+    {
+      "ending_id": "broken_evidence",
+      "title": "证据断裂结局",
+      "condition": {
+        "route_tag": "证据断裂结局"
+      },
+      "summary": "你保住了一时安全，却亲手断掉了翻案的证据。敌人没有被击败，只是换了一个更干净的身份继续站在台前。",
+      "category": "失败结局"
+    },
+    {
+      "ending_id": "blood_debt",
+      "title": "血债失控结局",
+      "condition": {
+        "route_tag": "血债结局"
+      },
+      "summary": "你选择用最快的方式破局，也让局面彻底失控。主角赢下一场打斗，却输掉了人心和后路。",
+      "category": "失败结局"
+    },
+    {
+      "ending_id": "faith_lost",
+      "title": "失信败局",
+      "condition": {
+        "route_tag": "失信败局"
+      },
+      "summary": "你把利益放在所有人前面。主角短暂得势，但再也没有人愿意把背后交给他。",
+      "category": "失败结局"
+    },
+    {
+      "ending_id": "lonely_power",
+      "title": "孤家寡人结局",
+      "condition": {
+        "route_tag": "孤家寡人结局"
+      },
+      "summary": "你堵住了风险，也堵住了所有信任。主角活了下来，却只能一个人坐在胜利的空屋里。",
+      "category": "失败结局"
+    },
+    {
+      "ending_id": "hidden_truth",
+      "title": "隐藏真相结局",
+      "condition": {
+        "route_tag": "结局：隐藏真相",
+        "flags": [
+          "account_book",
+          "token",
+          "edict"
+        ],
+        "mastermind": {
+          "gte": 20
+        }
+      },
+      "summary": "你集齐账本、令牌和密诏，没有杀掉最后的敌人，因为你知道他只是更大棋局里被推出来的影子。主角放过他，也终于看见真正的幕后棋手。",
+      "category": "隐藏结局"
+    },
+    {
+      "ending_id": "public_legend",
+      "title": "天下扬名结局",
+      "condition": {
+        "route_tag": "结局：天下扬名"
+      },
+      "summary": "你选择公开所有真相，把每一次羞辱都变成主角立威的台阶。名声传开，新的敌人也开始真正忌惮。",
+      "category": "通关结局"
+    },
+    {
+      "ending_id": "mask_master",
+      "title": "藏锋为王结局",
+      "condition": {
+        "route_tag": "结局：藏锋为王"
+      },
+      "summary": "你把纨绔面具戴到了最后。敌人一路轻敌，直到最后一刻才发现自己早被反套进局。",
+      "category": "通关结局"
+    },
+    {
+      "ending_id": "chess_winner",
+      "title": "权谋翻盘结局",
+      "condition": {
+        "route_tag": "结局：权谋翻盘"
+      },
+      "summary": "你没有急着出风头，而是把线索、人情和盟友一枚枚落成棋子。局面翻转时，主角已经站在棋盘外。",
+      "category": "通关结局"
+    },
+    {
+      "ending_id": "guardian",
+      "title": "守护羁绊结局",
+      "condition": {
+        "route_tag": "结局：守护羁绊"
+      },
+      "summary": "你把选择一次次让给身边人。主角获得的不只是胜利，还有愿意和他一起面对风浪的人。",
+      "category": "通关结局"
+    }
+  ]
+}

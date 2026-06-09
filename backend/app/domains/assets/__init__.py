@@ -1,0 +1,2 @@
+"""Interaction effect asset registry."""
+

@@ -1,0 +1,476 @@
+{
+  "version": "txy-manual-v1",
+  "series": {
+    "title": "天下第一纨绔",
+    "world": "架空古代大炎王朝，朝堂、皇权、家族与比武冲突并行",
+    "main_characters": ["苏羽", "大炎皇帝", "公主"],
+    "visual_style": "古装竖屏短剧，写实电影光影，动作清晰，节奏紧凑",
+    "forbidden_changes": [
+      "不得把古装场景变成现代场景",
+      "不得随机更换苏羽、公主或皇帝的脸、发型和服装",
+      "不得凭空新增法术、现代武器或陌生核心人物",
+      "不得提前改变后续正片已经确定的胜负、婚约和身份事实"
+    ]
+  },
+  "episodes": {
+    "txy_001": {
+      "episode_summary": "三国使臣在朝堂施压求战，大炎一时无人应战，苏羽被视为只会惹事的纨绔。",
+      "points": [{
+        "trigger_source": "fork",
+        "trigger_ts": 45.0,
+        "previous_context": "三国使臣当众挑衅，大炎朝臣顾忌重重，殿内气氛压抑。",
+        "current_conflict": "三国施压求一战，大炎必须立即回应",
+        "next_main_event": "朝堂继续争论应战人选",
+        "active_characters": ["苏羽", "大炎皇帝", "三国使臣", "朝臣"],
+        "question": "三国逼战，苏羽如何替大炎破局？",
+        "opening_continuity": "保持朝堂站位和群臣注视方向，苏羽从原位置接住众人目光。",
+        "dialogue_tone": "苏羽轻笑：打可以，规矩得由我来定。",
+        "ending_bridge": "使臣收住笑意，朝堂目光重新落向皇帝，衔接正片争论。",
+        "options": [
+          {"option_key": "A", "label": "当殿请战压住使臣", "description": "苏羽主动上前接下挑战，以气势稳住朝堂", "action": "越众请战并逼使臣后退半步", "emotion": "燃"},
+          {"option_key": "B", "label": "反问规则逼其露怯", "description": "不急着动手，先用赌约和规则反制对方", "action": "抓住使臣话中漏洞提出对等赌约", "emotion": "悬疑"},
+          {"option_key": "C", "label": "装作纨绔暗布后手", "description": "表面嬉笑示弱，暗中观察对手破绽", "action": "故意插科打诨并记下使臣的惯用动作", "emotion": "反转"}
+        ]
+      }]
+    },
+    "txy_002": {
+      "episode_summary": "蛮夷以招亲和比武压迫大炎，朝中苦于无人可用。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 31.5,
+        "previous_context": "朝堂正在寻找能够迎战的高手，众人对胜算缺乏信心。",
+        "current_conflict": "实力未知的神秘高手即将被推到台前",
+        "next_main_event": "点明蛮夷招亲、大炎不能输",
+        "active_characters": ["苏羽", "大炎皇帝", "朝臣", "神秘高手"],
+        "question": "神秘高手出现，苏羽如何试探？",
+        "dialogue_tone": "苏羽淡淡道：高手不高手，出一招便知道。",
+        "ending_bridge": "神秘人停住脚步，殿内再度提起招亲比武。",
+        "options": [
+          {"label": "当众请他亮出一招", "description": "用最小交锋验证对方真实实力", "action": "抬手邀对方只过一招", "emotion": "燃"},
+          {"label": "从兵器细节查身份", "description": "观察兵器和步法，判断他来自哪一方", "action": "绕到侧面辨认兵器纹样", "emotion": "悬疑"},
+          {"label": "故意贬低诱他失态", "description": "用纨绔口吻刺激对方主动露底", "action": "轻蔑一笑并点破对方紧张", "emotion": "反转"}
+        ]
+      }]
+    },
+    "txy_003": {
+      "episode_summary": "家族长辈围绕苏羽是否成器发生争执，有人借机攻击苏夫人教子无方。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 71.5,
+        "previous_context": "父亲怒斥苏羽顽劣，家族众人顺势施压。",
+        "current_conflict": "旁人当众指责苏夫人教子无方",
+        "next_main_event": "父亲继续痛斥苏羽是扶不上墙的废物",
+        "active_characters": ["苏羽", "苏夫人", "苏父", "家族长辈"],
+        "question": "母亲受辱，苏羽要如何回应？",
+        "dialogue_tone": "苏羽收起笑意：骂我可以，别把我娘扯进来。",
+        "ending_bridge": "苏羽挡在母亲身前，父亲的怒斥紧接着落下。",
+        "options": [
+          {"label": "挡在母亲身前反驳", "description": "把所有指责揽回自己身上", "action": "上前一步隔开母亲和长辈", "emotion": "情感"},
+          {"label": "拿出证据当场自证", "description": "用刚完成的事情证明自己并非废物", "action": "把关键证物放到桌上", "emotion": "爽"},
+          {"label": "顺势认错反套真话", "description": "暂时示弱，引出对方真正目的", "action": "低头认错并追问是谁授意发难", "emotion": "悬疑"}
+        ]
+      }]
+    },
+    "txy_004": {
+      "episode_summary": "驸马招亲线开启，家族内部的伪善和算计逐渐暴露。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 110.0,
+        "force_trigger_ts": true,
+        "previous_context": "庭院里，白衣女子放话苏羽若不配合，便休想顺利拿到驸马之位。",
+        "current_conflict": "白衣女子当面施压，逼苏羽接受她对驸马之位的安排",
+        "next_main_event": "苏羽表明自己也要争驸马，女子转身离开",
+        "active_characters": ["苏羽", "白衣女子"],
+        "question": "女子当面施压，苏羽如何接招？",
+        "opening_continuity": "保持夜间庭院、银灰衣苏羽和白衣女子的站位，承接女子刚说完狠话的近景。",
+        "dialogue_tone": "苏羽淡淡道：驸马之位，还轮不到你替我做主。",
+        "ending_bridge": "女子神色一沉转身离开，苏羽留在原地，衔接他表明争驸马的正片。",
+        "options": [
+          {"label": "当面拒绝她的安排", "description": "明确表态自己也会争驸马，不接受对方摆布", "action": "迎着女子目光说出自己的决定", "emotion": "爽"},
+          {"label": "假装没听懂继续套话", "description": "追问她为何如此笃定，逼她透露背后依仗", "action": "故作茫然追问是谁替她撑腰", "emotion": "悬疑"},
+          {"label": "暂避锋芒暗记线索", "description": "先让女子离开，记住她话中的漏洞再反查", "action": "侧身让路并盯住她离去方向", "emotion": "反转"}
+        ]
+      }]
+    },
+    "txy_005": {
+      "episode_summary": "蒙面人逼迫苏羽交出珍贵玉佩，双方在月夜屋顶对峙。",
+      "points": [{
+        "trigger_source": "episode_tail",
+        "trigger_ts": 100.6,
+        "previous_context": "蒙面人嘲讽苏羽是废物，苏羽拒绝交出玉佩。",
+        "current_conflict": "蒙面黑衣人持玉佩现身，身份和目的不明",
+        "next_main_event": "屋顶对峙，黑衣人放出二选一狠话",
+        "active_characters": ["苏羽", "蒙面黑衣人"],
+        "question": "玉佩现身，苏羽如何夺回主动？",
+        "dialogue_tone": "苏羽盯住玉佩：东西可以谈，先把脸露出来。",
+        "ending_bridge": "两人隔着屋脊停住，黑衣人随即抛出二选一条件。",
+        "options": [
+          {"label": "突进夺回玉佩", "description": "趁月色遮挡突然近身抢夺", "action": "借屋脊掩护快速扣住持玉佩的手", "emotion": "燃"},
+          {"label": "用假线索试探身份", "description": "故意说错玉佩来历，观察对方反应", "action": "编出半句假秘闻并盯住对方眼神", "emotion": "悬疑"},
+          {"label": "以退为进提出交换", "description": "先稳住对方，再寻找近身机会", "action": "摊开双手提出当面交换", "emotion": "反转"}
+        ]
+      }]
+    },
+    "txy_006": {
+      "episode_summary": "夜战后有人中剑倒地，蒙面人震惊，白衣身影立于屋顶。",
+      "points": [{
+        "trigger_source": "episode_tail",
+        "trigger_ts": 68.9,
+        "previous_context": "男子中剑倒地，围观者惊慌，蒙面人神色错愕。",
+        "current_conflict": "白衣人立于屋顶，来意和立场未知",
+        "next_main_event": "下一集继续揭示白衣人的身份",
+        "active_characters": ["苏羽", "白衣人", "蒙面人"],
+        "question": "白衣人压场，苏羽如何应对？",
+        "dialogue_tone": "苏羽抬头：既然来了，就别只站着看。",
+        "ending_bridge": "白衣衣摆随风停住，身份悬念保留到正片后续。",
+        "options": [
+          {"label": "开口确认敌友", "description": "不贸然出手，先逼对方表明立场", "action": "护住伤者并抬头质问", "emotion": "悬疑"},
+          {"label": "借机救下倒地之人", "description": "趁双方对峙快速转移伤者", "action": "俯身拖开伤者并保持戒备", "emotion": "情感"},
+          {"label": "佯攻蒙面人试反应", "description": "用一次假动作判断白衣人会帮谁", "action": "突然踏前佯攻蒙面人", "emotion": "燃"}
+        ]
+      }]
+    },
+    "txy_007": {
+      "episode_summary": "朝堂贬低皇城纨绔，苏羽真正出现后令女子和官员震惊。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 63.5,
+        "previous_context": "皇帝表明心系百姓，有人当众贬低皇城纨绔。",
+        "current_conflict": "女子见到苏羽本人后当场震惊",
+        "next_main_event": "官员听到镇北侯名号后错愕",
+        "active_characters": ["苏羽", "女子", "大炎皇帝", "官员"],
+        "question": "身份反差出现，苏羽如何控场？",
+        "dialogue_tone": "苏羽笑道：怎么，和传闻里不太一样？",
+        "ending_bridge": "女子欲言又止，官员随即禀出镇北侯名号。",
+        "options": [
+          {"label": "顺势亮出真实本事", "description": "用一个利落动作打破纨绔印象", "action": "随手接住飞落物件并稳稳放回", "emotion": "爽"},
+          {"label": "继续装傻观察众人", "description": "保留底牌，看看谁最先露出敌意", "action": "故作轻佻扫视在场众人", "emotion": "悬疑"},
+          {"label": "低声提醒女子保密", "description": "暂时建立同盟，保住身份优势", "action": "侧身挡住视线并低声提醒", "emotion": "暧昧"}
+        ]
+      }]
+    },
+    "txy_008": {
+      "episode_summary": "众人质疑苏羽参赛资格，嘲讽他是无用废物。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 47.5,
+        "previous_context": "有人劝阻不要为难苏羽，众人仍质疑他能否参赛。",
+        "current_conflict": "旁人当众嘲讽苏羽是无用废物",
+        "next_main_event": "皇帝宣告大炎以武为根本",
+        "active_characters": ["苏羽", "大炎皇帝", "嘲讽者", "朝臣"],
+        "question": "被骂废物，苏羽如何反击？",
+        "dialogue_tone": "苏羽懒洋洋道：废不废，上场以后再说。",
+        "ending_bridge": "嘲讽者笑容僵住，皇帝随即宣告大炎以武为本。",
+        "options": [
+          {"label": "一招震碎面前杯盏", "description": "不伤人，只用力量让全场闭嘴", "action": "屈指轻弹震裂桌上杯盏", "emotion": "爽"},
+          {"label": "立下赌约逼他应战", "description": "把口舌羞辱变成公开赌局", "action": "指向擂台提出输者当众道歉", "emotion": "燃"},
+          {"label": "装作认怂记下敌人", "description": "暂时收起锋芒，锁定幕后推动者", "action": "笑着后退并观察谁在交换眼色", "emotion": "悬疑"}
+        ]
+      }]
+    },
+    "txy_009": {
+      "episode_summary": "有人贬低苏羽没有武艺，双方父辈也卷入冲突。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 63.5,
+        "previous_context": "旁人贬低苏羽毫无武艺。",
+        "current_conflict": "对方父亲放言要让儿子打死苏羽",
+        "next_main_event": "双方继续挑衅并谈到驸马职位",
+        "active_characters": ["苏羽", "对手", "对手父亲", "朝臣"],
+        "question": "杀意摆上台面，苏羽如何回应？",
+        "dialogue_tone": "苏羽眼神一冷：擂台分胜负，不替你们收尸。",
+        "ending_bridge": "对方父子怒意更盛，话题重新落回驸马之争。",
+        "options": [
+          {"label": "正面接下生死挑战", "description": "明确底线后当众应战", "action": "踏前一步与对手隔空对视", "emotion": "燃"},
+          {"label": "点破父子借刀之计", "description": "指出他们想借比武清除异己", "action": "转身向群臣说出利益链", "emotion": "反转"},
+          {"label": "改赌约保住双方性命", "description": "以更高赌注换掉死斗规则", "action": "向皇帝提出新的胜负条件", "emotion": "智斗"}
+        ]
+      }]
+    },
+    "txy_010": {
+      "episode_summary": "番邦使臣在大炎朝堂公开挑衅，并提出涉及公主的无礼条件。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 23.5,
+        "previous_context": "番邦使团入殿，朝臣保持克制。",
+        "current_conflict": "番邦使臣当众出言挑衅大炎",
+        "next_main_event": "使臣露出诡异神色并索要公主",
+        "active_characters": ["苏羽", "大炎皇帝", "公主", "番邦使臣"],
+        "question": "番邦挑衅，苏羽怎样挡回去？",
+        "dialogue_tone": "苏羽嗤笑：来做客，就先学会大炎的规矩。",
+        "ending_bridge": "使臣压下怒气露出诡异神色，继续提出索要公主。",
+        "options": [
+          {"label": "用国礼反压使臣", "description": "抓住礼制漏洞，让对方先行赔礼", "action": "指出使臣失礼并要求重新行礼", "emotion": "爽"},
+          {"label": "替公主接下赌约", "description": "把无礼要求改成苏羽可掌控的比试", "action": "横身挡在公主前提出对赌", "emotion": "燃"},
+          {"label": "假意答应套出底牌", "description": "先让使臣说清真正条件和筹码", "action": "示意众人安静并追问交换条件", "emotion": "悬疑"}
+        ]
+      }]
+    },
+    "txy_011": {
+      "episode_summary": "比武前壮汉炫耀力量，试图用一腿碎石震慑大炎。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 31.5,
+        "previous_context": "双方准备比武，壮汉急于展示实力。",
+        "current_conflict": "壮汉放言一腿可碎百斤巨石",
+        "next_main_event": "壮汉继续挑衅并凌空飞踢",
+        "active_characters": ["苏羽", "壮汉", "大炎皇帝", "观战众人"],
+        "question": "对手炫力，苏羽如何破势？",
+        "dialogue_tone": "苏羽看了眼巨石：石头不会还手，人会。",
+        "ending_bridge": "壮汉被激怒腾身而起，正好衔接正片凌空飞踢。",
+        "options": [
+          {"label": "点破发力破绽", "description": "从站姿看出弱点，提前化解飞踢", "action": "指向对方支撑腿说出破绽", "emotion": "智斗"},
+          {"label": "单手接住碎石", "description": "用更轻松的方式压过力量展示", "action": "接住飞溅石块并捏成粉末", "emotion": "爽"},
+          {"label": "故意后退诱他起跳", "description": "让对手主动进入失衡状态", "action": "露出空门并退到擂台边缘", "emotion": "反转"}
+        ]
+      }]
+    },
+    "txy_012": {
+      "episode_summary": "持剑对手杀意毕露，擂台冲突升级。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 31.5,
+        "previous_context": "双方已经进入近距离对峙。",
+        "current_conflict": "持剑者公开放话必杀苏羽",
+        "next_main_event": "对手手探腰带暗藏动作",
+        "active_characters": ["苏羽", "持剑对手", "观战众人"],
+        "question": "杀招将出，苏羽如何抢先？",
+        "dialogue_tone": "苏羽盯住他的腰间：你的杀招，不在剑上。",
+        "ending_bridge": "对手瞳孔微缩，手下意识探向腰带。",
+        "options": [
+          {"label": "先封住持剑手腕", "description": "近身控制剑路，逼对手改变杀招", "action": "侧步扣住持剑手腕", "emotion": "燃"},
+          {"label": "点破腰间暗器", "description": "当众揭穿隐藏动作，让偷袭失效", "action": "用剑鞘指向对方腰带", "emotion": "爽"},
+          {"label": "卖出破绽等暗器", "description": "佯装只防长剑，准备反抓证据", "action": "退半步故意露出侧身空门", "emotion": "悬疑"}
+        ]
+      }]
+    },
+    "txy_013": {
+      "episode_summary": "比武进入白热化，重型武器和能量正面对撞。",
+      "points": [{
+        "trigger_source": "episode_tail",
+        "trigger_ts": 151.4,
+        "previous_context": "拓跋皇子携铁锤参赛，众人对其力量震惊。",
+        "current_conflict": "双方对拼后武器碎裂，能量爆发",
+        "next_main_event": "正片以殿前反常起舞制造反差",
+        "active_characters": ["苏羽", "拓跋皇子", "观战众人"],
+        "question": "武器尽碎，苏羽如何收场？",
+        "dialogue_tone": "苏羽甩去碎屑：兵器没了，胜负还没分。",
+        "ending_bridge": "烟尘散开，苏羽忽然换成轻松姿态，衔接正片反差动作。",
+        "options": [
+          {"label": "赤手逼退拓跋皇子", "description": "趁烟尘未散以掌力抢占中线", "action": "穿过烟尘一掌停在对手胸前", "emotion": "燃"},
+          {"label": "借碎片证明对手作弊", "description": "从断口发现兵器暗藏机关", "action": "捡起碎片展示异常结构", "emotion": "反转"},
+          {"label": "突然收势戏耍对手", "description": "用纨绔式轻松化解紧张", "action": "后撤整理衣袖并做出邀舞手势", "emotion": "搞笑"}
+        ]
+      }]
+    },
+    "txy_014": {
+      "episode_summary": "女子发现苏羽隐藏极深，却被侍卫控制。",
+      "points": [{
+        "trigger_source": "episode_tail",
+        "trigger_ts": 56.6,
+        "previous_context": "女子感慨苏羽隐藏极深，局势尚未明朗。",
+        "current_conflict": "女子被侍卫钳制，面露狠色",
+        "next_main_event": "下一集继续处理控制与反抗",
+        "active_characters": ["苏羽", "女子", "侍卫"],
+        "question": "女子被制，苏羽要救还是试探？",
+        "dialogue_tone": "苏羽低声道：别动，我先看看谁下的令。",
+        "ending_bridge": "苏羽与女子交换眼神，侍卫手上再次发力，悬念留回主线。",
+        "options": [
+          {"label": "瞬间卸掉侍卫手劲", "description": "不伤侍卫，先让女子脱困", "action": "按住侍卫肘部迫其松手", "emotion": "燃"},
+          {"label": "追问背后下令之人", "description": "先确认这是误会还是阴谋", "action": "拦住去路要求出示命令", "emotion": "悬疑"},
+          {"label": "暗示女子配合演戏", "description": "暂不揭破，跟着侍卫找到幕后者", "action": "用眼神示意女子暂时忍耐", "emotion": "智斗"}
+        ]
+      }]
+    },
+    "txy_015": {
+      "episode_summary": "西夷武者携妖刀出战，在大殿前羞辱苏羽。",
+      "points": [{
+        "trigger_source": "episode_tail",
+        "trigger_ts": 179.4,
+        "previous_context": "武者夸耀刀气可隔空断岩，皇帝认出妖刀来历。",
+        "current_conflict": "西夷人举刀羞辱苏羽",
+        "next_main_event": "官员提醒小心，双方释放力量对拼",
+        "active_characters": ["苏羽", "西夷皇子", "大炎皇帝", "官员"],
+        "question": "妖刀压境，苏羽如何应战？",
+        "dialogue_tone": "苏羽抬眼：刀是好刀，可惜拿刀的人不行。",
+        "ending_bridge": "西夷人怒而举刀，官员急声提醒苏羽小心。",
+        "options": [
+          {"label": "空手迎上第一刀", "description": "以身法贴近，避开妖刀锋芒", "action": "侧身擦过刀锋逼近对手", "emotion": "燃"},
+          {"label": "指出妖刀真正弱点", "description": "从刀鸣判断力量并不稳定", "action": "凝视刀身点出裂纹位置", "emotion": "智斗"},
+          {"label": "激将他先使出绝招", "description": "诱导对手提前暴露底牌", "action": "故意背手站定让其全力出刀", "emotion": "反转"}
+        ]
+      }]
+    },
+    "txy_016": {
+      "episode_summary": "苏羽在大殿前击败西夷皇子，对手受伤仍不甘。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 95.5,
+        "previous_context": "苏羽刚取得优势，地上的利刃仍暗藏危险。",
+        "current_conflict": "落败者受伤吐血，仍面露不甘",
+        "next_main_event": "女子担忧，苏羽警告对手收敛",
+        "active_characters": ["苏羽", "西夷皇子", "女子", "大炎皇帝"],
+        "question": "对手不服，苏羽如何止战？",
+        "dialogue_tone": "苏羽收手：再动一下，丢的就不只是脸。",
+        "ending_bridge": "女子紧张望来，苏羽转身给出正片中的警告。",
+        "options": [
+          {"label": "踩住暗藏利刃", "description": "先封死偷袭机会，再给对手退路", "action": "抬脚压住地上利刃", "emotion": "爽"},
+          {"label": "伸手拉起落败者", "description": "以胜者姿态结束冲突", "action": "伸手示意对方起身认输", "emotion": "格局"},
+          {"label": "逼他说出幕后授意", "description": "利用其不甘追问谁让他下死手", "action": "俯身压低声音质问", "emotion": "悬疑"}
+        ]
+      }]
+    },
+    "txy_017": {
+      "episode_summary": "朝堂权臣以杀头和断腿威胁他人，神秘黑衣人也已出现。",
+      "points": [{
+        "trigger_source": "episode_tail",
+        "trigger_ts": 160.7,
+        "previous_context": "冲突已上升到杀头大罪，持械黑衣人现身。",
+        "current_conflict": "权臣下令打断他人的腿",
+        "next_main_event": "下一集继续权臣与苏羽阵营冲突",
+        "active_characters": ["苏羽", "权臣", "黑衣人", "侍卫"],
+        "question": "权臣下狠令，苏羽如何保人？",
+        "dialogue_tone": "苏羽挡住侍卫：谁敢动手，先问过我。",
+        "ending_bridge": "侍卫脚步停顿，权臣怒意未消，冲突保留回正片。",
+        "options": [
+          {"label": "当场拦下所有侍卫", "description": "站到受罚者前面，明确阻止行刑", "action": "横臂挡住冲来的侍卫", "emotion": "燃"},
+          {"label": "搬出皇命反压权臣", "description": "质疑权臣越权，逼其暂停命令", "action": "举出皇帝信物要求验令", "emotion": "智斗"},
+          {"label": "让黑衣人暗中救人", "description": "表面拖延，暗示同伴转移目标", "action": "与权臣周旋并给黑衣人手势", "emotion": "悬疑"}
+        ]
+      }]
+    },
+    "txy_018": {
+      "episode_summary": "权臣杀意升级，家族内部又出现挥霍和不孝的争执。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 87.5,
+        "previous_context": "有人出面撑腰，现场各方保持警惕。",
+        "current_conflict": "权臣公开下达杀无赦命令",
+        "next_main_event": "长辈转而斥责晚辈挥霍不孝",
+        "active_characters": ["苏羽", "权臣", "侍卫", "家族长辈"],
+        "question": "杀令落下，苏羽如何翻盘？",
+        "dialogue_tone": "苏羽冷笑：没有圣旨，你杀的是谁的人？",
+        "ending_bridge": "权臣一时语塞，家族长辈随即把矛头转向挥霍之事。",
+        "options": [
+          {"label": "亮出身份震住侍卫", "description": "用合法身份让执行者不敢上前", "action": "展示令牌并喝止侍卫", "emotion": "爽"},
+          {"label": "逼权臣亲口认下命令", "description": "留下越权证据，反将一军", "action": "要求权臣对众人重复杀令", "emotion": "智斗"},
+          {"label": "制造混乱带人撤离", "description": "先救下目标，再处理权臣", "action": "掀翻屏风遮挡视线并拉人后撤", "emotion": "动作"}
+        ]
+      }]
+    },
+    "txy_019": {
+      "episode_summary": "家族围绕教养、调查和多年付出爆发争论，关键人物话到一半停住。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 63.5,
+        "previous_context": "男子自责没有教好晚辈，女子质问为何不彻查。",
+        "current_conflict": "知情人话语突然中断，明显隐瞒关键事实",
+        "next_main_event": "众人继续谈父母教诲和多年付出",
+        "active_characters": ["苏羽", "知情男子", "苏夫人", "家族众人"],
+        "question": "真相卡住，苏羽如何追问？",
+        "dialogue_tone": "苏羽盯住他：把后半句说完。",
+        "ending_bridge": "知情人避开视线，家族众人再次提到父母多年的教诲。",
+        "options": [
+          {"label": "抓住停顿逼问真相", "description": "从表情和停顿直接追击", "action": "上前半步封住对方退路", "emotion": "悬疑"},
+          {"label": "替他说出最坏猜测", "description": "用一个判断测试众人反应", "action": "当众说出幕后可能涉及家族内鬼", "emotion": "反转"},
+          {"label": "先安抚母亲再私查", "description": "不让争吵继续伤害家人", "action": "扶住母亲并记下知情人的异常", "emotion": "情感"}
+        ]
+      }]
+    },
+    "txy_020": {
+      "episode_summary": "皇帝在众人面前表明真实身份，场面瞬间逆转。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 15.5,
+        "previous_context": "众人尚未意识到面前之人的真正身份。",
+        "current_conflict": "皇帝当众自曝身份，震慑全场",
+        "next_main_event": "皇帝继续调侃自身大逆不道并询问是否吹牛",
+        "active_characters": ["苏羽", "大炎皇帝", "家族众人"],
+        "question": "皇帝亮明身份，苏羽如何接场？",
+        "dialogue_tone": "苏羽拱手又笑：陛下这身份，确实没人敢冒充。",
+        "ending_bridge": "众人齐齐僵住，皇帝顺势继续说起自己的“大逆不道”。",
+        "options": [
+          {"label": "带头行礼稳住众人", "description": "先给所有人一个下台阶", "action": "拱手行礼并示意众人跟上", "emotion": "稳重"},
+          {"label": "顺着皇帝玩笑化解", "description": "用苏羽式幽默缓解全场恐慌", "action": "故作认真辨认皇帝身份", "emotion": "搞笑"},
+          {"label": "借机请皇帝主持公道", "description": "把此前争议直接交给皇帝裁断", "action": "转身指向争端双方说明诉求", "emotion": "爽"}
+        ]
+      }]
+    },
+    "txy_021": {
+      "episode_summary": "皇家颜面受损，苏羽的伪装身份被揭开，皇帝震怒。",
+      "points": [{
+        "trigger_source": "episode_tail",
+        "trigger_ts": 81.9,
+        "previous_context": "皇帝斥责有人损害皇家颜面，苏羽的伪装身份曝光。",
+        "current_conflict": "皇帝认定有人妄图行刺自己",
+        "next_main_event": "下一集进入审问和供述",
+        "active_characters": ["苏羽", "大炎皇帝", "嫌疑人", "侍卫"],
+        "question": "行刺罪名落下，苏羽如何查清？",
+        "dialogue_tone": "苏羽拦住侍卫：先留活口，幕后的人还没露面。",
+        "ending_bridge": "皇帝压住怒火，嫌疑人被押跪，衔接下一集供述。",
+        "options": [
+          {"label": "阻止处决留下活口", "description": "先保住嫌疑人，追查幕后主使", "action": "抬手挡住侍卫拔刀", "emotion": "悬疑"},
+          {"label": "检查现场找出破绽", "description": "从所谓刺杀痕迹判断是否嫁祸", "action": "俯身查看遗落兵器和脚印", "emotion": "智斗"},
+          {"label": "当场审问逼其供述", "description": "利用皇威和证据快速突破", "action": "把证物放到嫌疑人面前", "emotion": "压迫"}
+        ]
+      }]
+    },
+    "txy_022": {
+      "episode_summary": "涉案女子跪地供述，关键身份仍被耳语隐藏。",
+      "points": [{
+        "trigger_source": "highlight",
+        "trigger_ts": 23.5,
+        "previous_context": "审问刚刚开始，众人等待解释。",
+        "current_conflict": "女子跪地承认自己已经依令行事",
+        "next_main_event": "耳语透露关键身份",
+        "active_characters": ["苏羽", "大炎皇帝", "供述女子", "侍卫"],
+        "question": "供词含糊，苏羽怎样追到主使？",
+        "dialogue_tone": "苏羽追问：依谁的令？把名字说出来。",
+        "ending_bridge": "女子惊惧抬眼，随后贴近低声说出关键身份。",
+        "options": [
+          {"label": "追问下令者姓名", "description": "抓住“依令”二字直指幕后", "action": "蹲下与女子平视追问", "emotion": "悬疑"},
+          {"label": "拿出证物核对供词", "description": "防止女子用半真半假的话脱罪", "action": "展示现场证物要求解释", "emotion": "智斗"},
+          {"label": "承诺保护换取真话", "description": "先降低恐惧，再让她完整供述", "action": "示意侍卫退开并给出保护承诺", "emotion": "情感"}
+        ]
+      }]
+    },
+    "txy_023": {
+      "episode_summary": "妃嫔在皇帝面前惶恐求饶，态度即将发生变化。",
+      "points": [{
+        "trigger_source": "episode_tail",
+        "trigger_ts": 56.0,
+        "previous_context": "众人向皇帝叩谢，妃嫔的处境骤然危险。",
+        "current_conflict": "妃嫔跪地惶恐向皇帝求饶",
+        "next_main_event": "皇帝态度变化，让求饶者起身",
+        "active_characters": ["苏羽", "大炎皇帝", "妃嫔", "公主"],
+        "question": "妃嫔求饶，苏羽如何判断真假？",
+        "dialogue_tone": "苏羽轻声提醒：陛下，她怕的未必只是责罚。",
+        "ending_bridge": "皇帝看了苏羽一眼，态度稍缓，命妃嫔起身。",
+        "options": [
+          {"label": "替她指出幕后胁迫", "description": "从恐惧反应判断她另有苦衷", "action": "指向她紧握的袖口提醒皇帝", "emotion": "反转"},
+          {"label": "要求她当场说实话", "description": "不给模糊求饶留下空间", "action": "让侍卫退后并要求完整陈述", "emotion": "悬疑"},
+          {"label": "先请皇帝免其死罪", "description": "用宽缓换取后续证词", "action": "拱手请皇帝给一次开口机会", "emotion": "情感"}
+        ]
+      }]
+    },
+    "txy_024": {
+      "episode_summary": "苏羽获封正一品护国将军并被赐婚公主，大臣质疑封赏过重。",
+      "points": [{
+        "trigger_source": "episode_tail",
+        "trigger_ts": 107.9,
+        "previous_context": "皇帝刚宣布护国将军封赏与赐婚。",
+        "current_conflict": "大臣当众质疑给苏羽的封赏过多",
+        "next_main_event": "丞相吕有为上前拜见皇帝",
+        "active_characters": ["苏羽", "大炎皇帝", "公主", "质疑大臣", "吕有为"],
+        "question": "群臣质疑封赏，苏羽如何服众？",
+        "dialogue_tone": "苏羽拱手：封赏重不重，拿战功来算。",
+        "ending_bridge": "群臣低声议论，丞相吕有为随即出列拜见皇帝。",
+        "options": [
+          {"label": "请皇帝改为军功赌约", "description": "把封赏与下一场战功公开绑定", "action": "主动提出若无新功便退还封赏", "emotion": "格局"},
+          {"label": "列出战功当殿服众", "description": "用事实逐条回应群臣质疑", "action": "转身面向群臣列出关键战功", "emotion": "爽"},
+          {"label": "暂辞婚约保住公主", "description": "先把公主从政治争议中摘出", "action": "向皇帝请命将婚约暂缓", "emotion": "情感"}
+        ]
+      }]
+    }
+  }
+}

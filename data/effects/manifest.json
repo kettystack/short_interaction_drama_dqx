@@ -1,0 +1,56 @@
+{
+  "version": "2026.06.04",
+  "effects": [
+    {
+      "code": "shuang",
+      "label": "爽",
+      "actions": ["爽", "打脸爽点", "反杀", "反杀逆袭"],
+      "icon": "assets/effects/icons/shuang.svg",
+      "animation": {
+        "type": "custom_painter",
+        "preset": "ignition",
+        "duration_ms": 900
+      },
+      "sound": {
+        "url": "assets/effects/sounds/shuang_hit.mp3",
+        "volume": 0.8
+      },
+      "haptic": "heavy",
+      "colors": ["#FF4F72", "#FFC857"]
+    },
+    {
+      "code": "laugh",
+      "label": "笑",
+      "actions": ["笑", "笑出鹅叫", "搞笑包袱", "离谱"],
+      "icon": "assets/effects/icons/laugh.svg",
+      "animation": {
+        "type": "custom_painter",
+        "preset": "comedyPop",
+        "duration_ms": 820
+      },
+      "sound": {
+        "url": "assets/effects/sounds/laugh_pop.mp3",
+        "volume": 0.72
+      },
+      "haptic": "light",
+      "colors": ["#52E5C4", "#FFD166"]
+    },
+    {
+      "code": "burn",
+      "label": "燃",
+      "actions": ["燃", "高能冲突", "护主角", "角色高光"],
+      "icon": "assets/effects/icons/burn.svg",
+      "animation": {
+        "type": "custom_painter",
+        "preset": "spotlight",
+        "duration_ms": 1100
+      },
+      "sound": {
+        "url": "assets/effects/sounds/burn_whoosh.mp3",
+        "volume": 0.76
+      },
+      "haptic": "heavy",
+      "colors": ["#FF8A3D", "#66E1FF"]
+    }
+  ]
+}

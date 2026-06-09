@@ -1,0 +1,2 @@
+"""AIGC video insertion domain."""
+

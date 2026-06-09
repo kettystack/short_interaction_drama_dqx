@@ -1,0 +1,41 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: sdi_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: sdi
+      POSTGRES_PASSWORD: sdi
+      POSTGRES_DB: sdi
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: sdi_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+  backend:
+    build: ./backend
+    container_name: sdi_backend
+    restart: unless-stopped
+    depends_on:
+      - postgres
+      - redis
+    environment:
+      DATABASE_URL: postgresql+asyncpg://sdi:sdi@postgres:5432/sdi
+      REDIS_URL: redis://redis:6379/0
+      DOUBAO_API_KEY: ${DOUBAO_API_KEY}
+      DOUBAO_ENDPOINT: ${DOUBAO_ENDPOINT}
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    profiles: ["full"]   # 默认不启动，本地开发用 uvicorn --reload
+
+volumes:
+  pgdata:

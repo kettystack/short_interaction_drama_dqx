@@ -1,0 +1,187 @@
+{
+  "_comment": "ep_063 在 t=56s 出现分叉点；3 个分支均从其他集真实片段剪出（无 AIGC 依赖）。txy_001 在 t=45s 同理。",
+  "clips": [
+    {
+      "out": "ep_063_b1.mp4",
+      "source": "第64集.mp4",
+      "ss": 161,
+      "to": 192,
+      "label": "假意接钱伺机反击",
+      "description": "向云强忍怒火接过钱，趁讨债人放松扣腕反制",
+      "order_idx": 0
+    },
+    {
+      "out": "ep_063_b2.mp4",
+      "source": "第65集.mp4",
+      "ss": 25,
+      "to": 88,
+      "label": "拜入老者门下学本事",
+      "description": "老者点醒向云，传授神秘行当真正传承",
+      "order_idx": 1
+    },
+    {
+      "out": "ep_063_b3.mp4",
+      "source": "第66集.mp4",
+      "ss": 89,
+      "to": 160,
+      "label": "硬刚到底当场对峙",
+      "description": "向云正面硬刚，事态迅速升级失控",
+      "order_idx": 2
+    },
+    {
+      "out": "txy_001_b1.mp4",
+      "source": "第2集.mp4",
+      "source_dir": "/Users/daiqixu/Desktop/duanjujifa/juben/tianxiadyi",
+      "out_dir": "/Users/daiqixu/Desktop/duanjujifa/juben/tianxiadyi/branches",
+      "ss": 8,
+      "to": 60,
+      "label": "硬上擂台一战定乾坤",
+      "description": "主角直接登台，凭真功夫平息三国压力",
+      "order_idx": 0
+    },
+    {
+      "out": "txy_001_b2.mp4",
+      "source": "第3集.mp4",
+      "source_dir": "/Users/daiqixu/Desktop/duanjujifa/juben/tianxiadyi",
+      "out_dir": "/Users/daiqixu/Desktop/duanjujifa/juben/tianxiadyi/branches",
+      "ss": 20,
+      "to": 90,
+      "label": "暗中布局拉拢朝堂",
+      "description": "暗中联络旧部，借朝臣之手反制对手",
+      "order_idx": 1
+    },
+    {
+      "out": "txy_001_b3.mp4",
+      "source": "第4集.mp4",
+      "source_dir": "/Users/daiqixu/Desktop/duanjujifa/juben/tianxiadyi",
+      "out_dir": "/Users/daiqixu/Desktop/duanjujifa/juben/tianxiadyi/branches",
+      "ss": 30,
+      "to": 100,
+      "label": "示弱诱敌坐收渔利",
+      "description": "假意服软引敌冒进，伺机一举翻盘",
+      "order_idx": 2
+    },
+    {
+      "out": "sbtnn_001_b1.mp4",
+      "source": "第2集.mp4",
+      "source_dir": "/Users/daiqixu/Desktop/duanjujifa/juben/shibasuitainainai",
+      "out_dir": "/Users/daiqixu/Desktop/duanjujifa/juben/shibasuitainainai/branches",
+      "ss": 20,
+      "to": 75,
+      "label": "当场亮辈分镇住众人",
+      "description": "太奶奶不再隐藏身份，用辈分和气场压住全家",
+      "order_idx": 0
+    },
+    {
+      "out": "sbtnn_001_b2.mp4",
+      "source": "第3集.mp4",
+      "source_dir": "/Users/daiqixu/Desktop/duanjujifa/juben/shibasuitainainai",
+      "out_dir": "/Users/daiqixu/Desktop/duanjujifa/juben/shibasuitainainai/branches",
+      "ss": 40,
+      "to": 105,
+      "label": "装糊涂套出幕后黑手",
+      "description": "她故意示弱，引对方露出真正目的",
+      "order_idx": 1
+    },
+    {
+      "out": "sbtnn_001_b3.mp4",
+      "source": "第4集.mp4",
+      "source_dir": "/Users/daiqixu/Desktop/duanjujifa/juben/shibasuitainainai",
+      "out_dir": "/Users/daiqixu/Desktop/duanjujifa/juben/shibasuitainainai/branches",
+      "ss": 15,
+      "to": 80,
+      "label": "先护住孙辈再反击",
+      "description": "太奶奶先稳住受委屈的孙辈，再把矛盾翻到明面",
+      "order_idx": 2
+    }
+  ],
+  "forks": [
+    {
+      "episode_id": "ep_063",
+      "ts_in_video": 56.0,
+      "parent_branch_id": null,
+      "prompt_text": "讨债人逼到面前，向云要怎么应对？",
+      "branches": [
+        {
+          "choice_label": "假意接钱伺机反击",
+          "video_url": "/videos/branches/ep_063_b1.mp4",
+          "duration": 31.0,
+          "order_idx": 0,
+          "description": "佯装贪财，扣腕反制（来自第64集）"
+        },
+        {
+          "choice_label": "拜入老者门下学本事",
+          "video_url": "/videos/branches/ep_063_b2.mp4",
+          "duration": 63.0,
+          "order_idx": 1,
+          "description": "听从神秘老者点拨，开启新故事（来自第65集）"
+        },
+        {
+          "choice_label": "硬刚到底当场对峙",
+          "video_url": "/videos/branches/ep_063_b3.mp4",
+          "duration": 71.0,
+          "order_idx": 2,
+          "description": "正面抗争，事态迅速升级（来自第66集）"
+        }
+      ]
+    },
+    {
+      "episode_id": "txy_001",
+      "ts_in_video": 45.0,
+      "parent_branch_id": null,
+      "prompt_text": "三国施压求一战，你是大炎纨绔，下一步怎么办？",
+      "branches": [
+        {
+          "choice_label": "硬上擂台一战定乾坤",
+          "video_url": "/videos/tianxiadyi/branches/txy_001_b1.mp4",
+          "duration": 52.0,
+          "order_idx": 0,
+          "description": "正面接招，以武止战（来自第2集）"
+        },
+        {
+          "choice_label": "暗中布局拉拢朝堂",
+          "video_url": "/videos/tianxiadyi/branches/txy_001_b2.mp4",
+          "duration": 70.0,
+          "order_idx": 1,
+          "description": "幕后串联，引导朝堂反制（来自第3集）"
+        },
+        {
+          "choice_label": "示弱诱敌坐收渔利",
+          "video_url": "/videos/tianxiadyi/branches/txy_001_b3.mp4",
+          "duration": 70.0,
+          "order_idx": 2,
+          "description": "假意服软，反手翻盘（来自第4集）"
+        }
+      ]
+    },
+    {
+      "episode_id": "sbtnn_001",
+      "ts_in_video": 52.0,
+      "parent_branch_id": null,
+      "prompt_text": "家族众人还没认出太奶奶，你希望她怎么破局？",
+      "branches": [
+        {
+          "choice_label": "当场亮辈分镇住众人",
+          "video_url": "/videos/shibasuitainainai/branches/sbtnn_001_b1.mp4",
+          "duration": 55.0,
+          "order_idx": 0,
+          "description": "直接亮明身份，用辈分和气场让众人闭嘴（来自第2集）"
+        },
+        {
+          "choice_label": "装糊涂套出幕后黑手",
+          "video_url": "/videos/shibasuitainainai/branches/sbtnn_001_b2.mp4",
+          "duration": 65.0,
+          "order_idx": 1,
+          "description": "先假装不懂，诱导对手露出破绽（来自第3集）"
+        },
+        {
+          "choice_label": "先护住孙辈再反击",
+          "video_url": "/videos/shibasuitainainai/branches/sbtnn_001_b3.mp4",
+          "duration": 65.0,
+          "order_idx": 2,
+          "description": "稳住家人情绪后再公开反击（来自第4集）"
+        }
+      ]
+    }
+  ]
+}

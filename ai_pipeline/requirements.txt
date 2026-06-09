@@ -1,0 +1,10 @@
+# AI Pipeline 仅在离线批处理时安装；后端不依赖这些包
+openai-whisper==20240930
+scenedetect[opencv]==0.6.4
+ffmpeg-python==0.2.0
+pillow==10.4.0
+httpx==0.27.2
+python-dotenv==1.0.1
+tqdm==4.66.5
+# Mac Apple Silicon 用：torch 会自带 MPS 后端
+torch==2.4.1
