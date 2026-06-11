@@ -16,7 +16,10 @@ class BranchVideoApi {
           baseUrl: AppConfig.apiBaseUrl,
           connectTimeout: const Duration(seconds: 10),
           receiveTimeout: const Duration(minutes: 3),
-          headers: {'X-User-Id': UserSession.userId},
+          headers: {
+            ...AppConfig.defaultHeaders,
+            'X-User-Id': UserSession.userId,
+          },
         ),
       ),
     );

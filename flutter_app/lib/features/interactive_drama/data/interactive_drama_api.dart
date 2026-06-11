@@ -6,7 +6,10 @@ import 'interactive_drama_models.dart';
 
 class InteractiveDramaApi {
   InteractiveDramaApi()
-      : _dio = Dio(BaseOptions(baseUrl: AppConfig.apiBaseUrl));
+      : _dio = Dio(BaseOptions(
+          baseUrl: AppConfig.apiBaseUrl,
+          headers: AppConfig.defaultHeaders,
+        ));
 
   final Dio _dio;
 

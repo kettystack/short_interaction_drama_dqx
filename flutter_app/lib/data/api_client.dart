@@ -16,6 +16,7 @@ class ApiClient {
       baseUrl: AppConfig.apiBaseUrl,
       connectTimeout: const Duration(seconds: 8),
       receiveTimeout: const Duration(seconds: 15),
+      headers: AppConfig.defaultHeaders,
     ));
     dio.interceptors.add(LogInterceptor(
       request: false,

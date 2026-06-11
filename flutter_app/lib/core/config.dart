@@ -9,6 +9,13 @@ class AppConfig {
     defaultValue: 'http://127.0.0.1:8000',
   );
 
+  static Map<String, String> get defaultHeaders {
+    if (apiBaseUrl.contains('.ngrok-free.')) {
+      return {'ngrok-skip-browser-warning': 'true'};
+    }
+    return const {};
+  }
+
   static String absoluteUrl(String? path) {
     if (path == null || path.isEmpty) return '';
     if (path.startsWith('http')) return path;
