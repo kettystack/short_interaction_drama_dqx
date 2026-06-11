@@ -51,7 +51,6 @@
 ├── ai_pipeline/             # 离线 AI 高光识别流水线
 ├── data/                    # 只提交轻量 JSON 配置，不提交视频与生成资源
 ├── scripts/                 # smoke test、批处理、预生成工具
-├── documents/               # PRD、技术方案、验收和设计文档
 ├── docker-compose.yml       # Postgres / Redis / 可选后端容器
 ├── LOCAL_RUN_GUIDE.md       # 本地运行详细说明
 └── DELIVERY_DEMO_GUIDE.md   # 演示与答辩说明
@@ -293,7 +292,6 @@ DOUBAO_API_KEY=xxx DOUBAO_ENDPOINT=xxx docker compose --profile full up --build
 | `DELIVERY_DEMO_GUIDE.md` | 演示路线、录屏脚本和交付说明 |
 | `BRANCH_TECH_DEEPDIVE.md` | 分支剧情和互动链路技术细节 |
 | `AI_HIGHLIGHT_RECOGNITION_RESEARCH.md` | AI 高光识别方案调研 |
-| `documents/README.md` | documents 目录索引 |
 | `ai_pipeline/README.md` | AI Pipeline 单独说明 |
 | `flutter_app/README.md` | Flutter 工程说明 |
 
