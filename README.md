@@ -52,8 +52,7 @@
 ├── data/                    # 只提交轻量 JSON 配置，不提交视频与生成资源
 ├── scripts/                 # smoke test、批处理、预生成工具
 ├── docker-compose.yml       # Postgres / Redis / 可选后端容器
-├── LOCAL_RUN_GUIDE.md       # 本地运行详细说明
-└── DELIVERY_DEMO_GUIDE.md   # 演示与答辩说明
+├── README.md      # 项目介绍与本地运行说明
 ```
 
 ## GitHub 上传内容
