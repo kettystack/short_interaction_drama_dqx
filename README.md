@@ -56,7 +56,7 @@
 └── DELIVERY_DEMO_GUIDE.md   # 演示与答辩说明
 ```
 
-## GitHub 上传策略
+## GitHub 上传内容
 
 这个仓库已经通过 `.gitignore` 排除了本地敏感和大体积内容：
 
@@ -284,20 +284,5 @@ DOUBAO_API_KEY=xxx DOUBAO_ENDPOINT=xxx docker compose --profile full up --build
 | AI 续写不可用 | 检查 `ARK_API_KEY` / `DOUBAO_API_KEY` / endpoint 配置；基础互动 Demo 可不填 |
 | GitHub 上传太大 | 确认视频、HLS、生成媒体都在 `.gitignore` 范围内，不要手动 `git add -f` |
 
-## 文档索引
-
-| 文档 | 内容 |
-| - | - |
-| `LOCAL_RUN_GUIDE.md` | 更完整的本地启动、seed、运行和排障步骤 |
-| `DELIVERY_DEMO_GUIDE.md` | 演示路线、录屏脚本和交付说明 |
-| `BRANCH_TECH_DEEPDIVE.md` | 分支剧情和互动链路技术细节 |
-| `AI_HIGHLIGHT_RECOGNITION_RESEARCH.md` | AI 高光识别方案调研 |
-| `ai_pipeline/README.md` | AI Pipeline 单独说明 |
-| `flutter_app/README.md` | Flutter 工程说明 |
-
-## 安全提醒
-
-- 不要提交真实 `.env`、API Key、Token、私钥或数据库密码。
-- 如果误提交了密钥，即使后来删除，也应立即去服务商后台轮换密钥。
-- GitHub 仓库建议保持 Private，演示时只展示代码和 `.env.example`。
+## 提醒
 - 大视频文件建议放本地、对象存储或 Git LFS，不建议直接进普通 Git 历史。
